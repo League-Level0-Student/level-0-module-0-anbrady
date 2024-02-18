@@ -12,6 +12,7 @@ public class RobotSpiral {
 	public static void main(String[] args) {
 		
 		// Create a new Robot
+		Robot rob = 
 		
 		// Set your robot's pen down 
 		
