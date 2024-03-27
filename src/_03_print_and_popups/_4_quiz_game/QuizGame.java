@@ -1,23 +1,53 @@
 package _03_print_and_popups._4_quiz_game;
 
+import javax.swing.JOptionPane;
+
 public class QuizGame {
 	public static void main(String[] args) {
 		
 		// Create a variable to hold the user's score. Set it equal to zero. 
-		
+		int score = 0;
 		// ASK A QUESTION AND CHECK THE ANSWER
+		// 2.  Ask the user a question 
+		String userAns1 = JOptionPane.showInputDialog("What is 4 + 4?");
 		
-				// 2.  Ask the user a question 
-				
-				// 3.  Use an if statement to check if their answer is correct
-				
-				// 4.  if the user's answer was correct, add one to their score 
+		// 3.  Use an if statement to check if their answer is correct
+		if (userAns1.equals("8")) 
+		{
+			// 4.  if the user's answer was correct, add one to their score
+			score += 1;
+		}
+		else {
+			score -= 1;
+		}
 		
 		// MAKE MORE QUESTIONS. Ask more questions by repeating the above 
 				// Option: Subtract a point from their score for a wrong answer
+		String userAns2 = JOptionPane.showInputDialog("What is 4 X 3?");
 		
+		// 3.  Use an if statement to check if their answer is correct
+		if (userAns2.equals("12")) 
+		{
+			// 4.  if the user's answer was correct, add one to their score
+			score += 1;
+		}
+		else {
+			score -= 1;
+		}
 		
+		String userAns3 = JOptionPane.showInputDialog("What is 4 - 4?");
+		
+		if (userAns3.equals("0")) 
+		{
+			// 4.  if the user's answer was correct, add one to their score
+			score += 1;
+		}
+		else {
+			score -= 1;
+		}
 		// After all the questions have been asked, tell the user their final score 
+		
+		System.out.print(score);
 		
 	}
 }
